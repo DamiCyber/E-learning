@@ -110,7 +110,7 @@ onValue(chatRef, (snapshot) => {
           <div class="box">
             <p class="">${chatMessages.userName}</p>
             <p>${chatMessages.chatHr}</p>
-            <small class="float-end fw-bold">${chatMessages.time}</small>
+            <small class="float-end fw-bold time">${chatMessages.time}</small>
             <img src=${chatMessages.photo} style="border-radius: 100%;"  class="minus1" title="profile picture"/>  
           </div>
         </div>

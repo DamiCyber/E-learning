@@ -114,6 +114,18 @@ body {
   margin-top: 30px;
   font-weight: 600;
 }
+.box{
+  position: absolute;
+  left: 20%;
+}
+.box img{
+  position: absolute;
+  top: 80%;
+  left: -30%;
+}
+.time{
+  margin-left: 30px;
+}
 @media(max-width:770px){
   .chat input {
     border-radius: 20px;
@@ -168,7 +180,10 @@ body {
     height: 60%;
   }
   .sign-Out {
-    margin-top:25px;
+    /* display: flex; */
+    padding: 2px;
+    font-size: 10px;
+    margin-top:-39px;
   }
 }
 @media(max-width:380px){
@@ -226,15 +241,36 @@ body {
   }
   .sign-Out {
     /* display: flex; */
-    padding: 5px;
+    padding: 2px;
     font-size: 10px;
-    margin-top:25px;
+    margin-top:-39px;
   }
   .sign-Out img{
     width: 50px;
   }
   .box{
-
+    position: absolute;
+    left: 20%;
+  }
+  .box img{
+    position: absolute;
+    top: 80%;
+    left: -30%;
+  }
+  .time{
+    margin-left: 30px;
+  }
+  .box{
+    position: absolute;
+    left: 20%;
+  }
+  .box img{
+    position: absolute;
+    top: 80%;
+    left: -30%;
+  }
+  .time{
+    margin-left: 30px;
   }
 }
 @media(max-width:330px){
@@ -247,7 +283,7 @@ body {
   }
   .links a{
     font-size: 12px;
-    margin-top: 7px;
+    margin-top: px;
     padding: 11px;
   }
   .chat{
@@ -297,6 +333,15 @@ body {
     width: 50px;
   }
   .box{
-
+    position: absolute;
+    left: 20%;
+  }
+  .box img{
+    position: absolute;
+    top: 80%;
+    left: -30%;
+  }
+  .time{
+    margin-left: 30px;
   }
 }
