@@ -7,15 +7,16 @@
     <title>Create account</title>
     <link rel="stylesheet" href="account.css">
 </head>
+
 <body>
     <div class="full-cover">
-        
+
     </div>
     <center class="me">
         <form class="form">
             <div id="rec"></div>
             <div id="err"></div>
-            <p class="title">Create an Account </p>   
+            <p class="title">Create an Account </p>
             <p class="message">Signup now and get full access to our app. </p>
             <div class="flex">
                 <label>
@@ -37,6 +38,7 @@
             <label>
                 <input class="input" type="password" placeholder="" required="" id="yourPass">
                 <span>Password</span>
+                <input type="checkbox" onclick="myFunction()" class="Show">Show Password
             </label>
             <label>
                 <input class="input" type="password" placeholder="" required="">
@@ -45,11 +47,21 @@
             <button onclick="creaty()" class="submit">create account</button>
             <p class="signin">Already have an acount ? <a href="./Login.html">Signin</a> </p>
         </form>
-       
+
 
     </center>
 
     <script type="module" src="script.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("yourPass");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 </body>
 
 </html>
