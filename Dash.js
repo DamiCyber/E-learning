@@ -33,8 +33,7 @@ onAuthStateChanged(auth, (user) => {
     } else {
       dip.innerHTML = `
         <div class="flex-us" style="display: flex; justify-content: center; align-items: center; font-size:14px; color:black; gap:20px;">
-          <h2 class="disall">${maily}</h2>
-          <img src="${imago}" class="pain">
+          <h2 class="disall" style="font-size: 11px;">${maily}</h2>
         </div>`;
     }
   } else {

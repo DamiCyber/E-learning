@@ -61,14 +61,13 @@ body {
   padding: 20px;
 }
 
-.sign-Out {
-  margin-top: 80px;
-  padding: 14px;
+.sign-Out img {
+  width: 90px;
+  /* height: 100px; */
+  margin-top: 70px;
+  /* padding: 10px; */
 }
-.sign-Out button {
-  padding: 10px;
-  border-radius: 10px;
-}
+
 .chat {
   position: absolute;
   top: 90%;
@@ -140,6 +139,7 @@ body {
   .logo h1{
     display: none;
   }
+  
   .chat{
     display: flex;
       position: absolute;
@@ -170,5 +170,138 @@ body {
   }
   .sign-Out {
     margin-top:25px;
+  }
+}
+@media(max-width:380px){
+  .logo h1{
+    display: none;
+  }
+  .flex-us{
+    position: relative;
+    right: 10%;
+  }
+  .links a{
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 11px;
+  }
+  .chat{
+    display: flex;
+      position: absolute;
+      left: 27%;
+  }
+  .chat input{
+    position: absolute;
+    top: -200%;
+   left: -10%;
+  }
+  .chat input {
+    margin-top: 70px;
+    border-radius: 20px;
+    height: 50px;
+    width: 210px;
+  }
+  .disall{
+    font-size: 12px;
+  }
+  
+  .btnsend  {
+    /* width: 40px; */
+  position: relative;
+  top: -55%;
+  left: 313%;
+  }
+  .cover1 {
+    width: 25%;
+    background-color: black;
+    height: 520px;
+  }
+  #displayChat {
+    position: fixed;
+    /* border: 1px solid black; */
+    overflow-y: scroll;
+    left: 27%;
+    top: 10%;
+    width: 70%;
+    height: 60%;
+  }
+  .sign-Out {
+    /* display: flex; */
+    padding: 5px;
+    font-size: 10px;
+    margin-top:25px;
+  }
+  .sign-Out img{
+    width: 50px;
+  }
+  .box{
+
+  }
+}
+@media(max-width:330px){
+  .logo h1{
+    display: none;
+  }
+  .flex-us{
+    position: relative;
+    right: 10%;
+  }
+  .links a{
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 11px;
+  }
+  .chat{
+    display: flex;
+      position: absolute;
+      left: 27%;
+  }
+  .chat input{
+    position: absolute;
+    top: -200%;
+   left: -10%;
+  }
+  .chat input {
+    margin-top: 70px;
+    border-radius: 20px;
+    height: 50px;
+    width: 165px;
+  }
+  .disall{
+    font-size: 12px;
+  }
+  .flex-us img{
+   /* margin-left: px; */
+  }
+  .btnsend  {
+  position: relative;
+  top: -55%;
+  left: 246%;
+  }
+  .cover1 {
+    width: 25%;
+    background-color: black;
+    height: 521px;
+  }
+  #displayChat {
+    position: fixed;
+    /* border: 1px solid black; */
+    overflow-y: scroll;
+    left: 27%;
+    top: 10%;
+    width: 70%;
+    height: 60%;
+  }
+  .sign-Out {
+    /* display: flex; */
+    padding: 2px;
+    font-size: 10px;
+    margin-top:-39px;
+  }
+  .sign-Out img{
+    width: 50px;
+  }
+  .box{
+
   }
 }
