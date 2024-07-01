@@ -17,7 +17,7 @@ function add() {
 
     disp.innerHTML = "";
     for (var i = 0; i < allCourse.length; i++) {
-      disp.innerHTML += `<p style="margin-bottom: 15px;">${allCourse[i]}101</p>`;
+      disp.innerHTML += `<p style="margin-bottom: 15px;">${allCourse[i]}</p>`;
     }
   }
 }
