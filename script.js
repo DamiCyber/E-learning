@@ -31,9 +31,11 @@ const signInF = () => {
     .then((result) => {
       const user = result.user;
       console.log(user);
+    
       window.location.href = "dash.html";
     })
     .catch((error) => {
+    
       console.log(error);
     });
 };
@@ -46,6 +48,7 @@ const signinEmail = () => {
     .then((userCredential) => {
       const user = userCredential.user;
       console.log(user);
+      alert("Login sucessfully")
       window.location.href = "dash.html";
     })
     .catch((error) => {
@@ -55,12 +58,14 @@ const signinEmail = () => {
         error.code === "auth/email-already-in-use" ||
         error.code === "auth/wrong-password"
       ) {
+        alert("Check your password")
         rec.innerHTML = "Invalid email or password.";
       } else if (error.code === "auth/internal-error") {
         err.innerHTML = "Internal error occurred. Please try again later.";
       } else if (error.code === "auth/network-request-failed") {
-        err.innerHTML += "Network error. Please check your internet connection.";
+        err.innerHTML = "Network error. Please check your internet connection.";
       } else {
+        alert("Check your password or network Error")
         console.error("Unhandled error:", error);
       }
 
@@ -89,12 +94,14 @@ const creaty = () => {
     .then((userCredential) => {
       const user = userCredential.user;
       console.log(user);
+      alert("Account has been sucessfully created")
       window.location.href = "Login.html";
     })
     .catch((error) => {
       let errorCode = error;
       console.log(errorCode);
       console.log(error);
+      alert("Try again network Error")
       if (error == "auth/email-already-in-use") {
         rec.innerHTML = "";
       } else if (error == "")
